@@ -1,0 +1,4 @@
+*.o
+unchunkfs
+client
+*.1.gz

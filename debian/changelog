@@ -1,0 +1,56 @@
+chunkfs (0.8) unstable; urgency=low
+
+  * Build-depend on perl for any arch to support cross building.
+  * Adapt writeoverlay.sh to changed losetup options.
+  * Use portable format specifiers for big integers.
+  * Update to debhelper compatibility level 9.
+
+ -- Florian Zumbiehl <florz@florz.de>  Thu, 13 Jun 2019 12:35:35 +0200
+
+chunkfs (0.7) unstable; urgency=low
+
+  * Check that file descriptors 0 to 2 are open on startup.
+  * Change Debian dependency from deprecated fuse-utils to fuse.
+
+ -- Florian Zumbiehl <florz@florz.de>  Wed, 25 Dec 2013 17:43:35 +0100
+
+chunkfs (0.6) unstable; urgency=low
+
+  * Fix potential filedescriptor leak in unchunkfs_read() in case of
+    pread() errors.
+
+ -- Florian Zumbiehl <florz@florz.de>  Wed, 17 Mar 2010 21:02:55 +0100
+
+chunkfs (0.5) unstable; urgency=low
+
+  * Mostly style improvements, in particular more useful help output
+  * writeoverlay.sh now uses new losetup option -s to avoid race
+    condition in device allocation
+
+ -- Florian Zumbiehl <florz@florz.de>  Sat, 29 Aug 2009 02:11:08 +0200
+
+chunkfs (0.4) unstable; urgency=low
+
+  * fixed read errors being ignored because of size_t being used where
+    ssize_t should be
+
+ -- Florian Zumbiehl <florz@florz.de>  Wed, 23 Jul 2008 10:18:36 +0200
+
+chunkfs (0.3) unstable; urgency=low
+
+  * Added writeoverlay.sh
+
+ -- Florian Zumbiehl <florz@florz.de>  Thu,  5 Jul 2007 03:48:03 +0200
+
+chunkfs (0.2) unstable; urgency=low
+
+  * Added UnChunkFS
+
+ -- Florian Zumbiehl <florz@florz.de>  Wed, 27 Jun 2007 00:08:38 +0200
+
+chunkfs (0.1) unstable; urgency=low
+
+  * Initial release
+
+ -- Florian Zumbiehl <florz@florz.de>  Mon, 20 Jun 2007 18:29:09 +0200
+
